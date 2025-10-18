@@ -15,3 +15,20 @@ D:\An2 Sem1\proiecte c#\MyCalculator\MyCalculator\obj\Debug\MyCalculator.PinkCal
 D:\An2 Sem1\proiecte c#\MyCalculator\MyCalculator\obj\Debug\MyCalculator.PinkCalculator.yo-NG.resources
 D:\An2 Sem1\proiecte c#\MyCalculator\MyCalculator\obj\Debug\aa-DJ\MyCalculator.resources.dll
 D:\An2 Sem1\proiecte c#\MyCalculator\MyCalculator\obj\Debug\yo-NG\MyCalculator.resources.dll
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\bin\Debug\MyCalculator.exe.config
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\bin\Debug\MyCalculator.exe
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\bin\Debug\MyCalculator.pdb
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\bin\Debug\aa-DJ\MyCalculator.resources.dll
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\bin\Debug\yo-NG\MyCalculator.resources.dll
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.csproj.AssemblyReference.cache
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.exe.config
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.PinkCalculator.resources
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.Properties.Resources.resources
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.PinkCalculator.aa-DJ.resources
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.PinkCalculator.yo-NG.resources
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.csproj.GenerateResource.cache
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.csproj.CoreCompileInputs.cache
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\aa-DJ\MyCalculator.resources.dll
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\yo-NG\MyCalculator.resources.dll
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.exe
+D:\An2 Sem1\proiecte c#\MyCalculator - Copy\MyCalculator\obj\Debug\MyCalculator.pdb

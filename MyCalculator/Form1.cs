@@ -1,24 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MyCalculator
 {
     public partial class PinkCalculator : Form
     {
-        
+
         private Double result = 0;
         private String operation_performed = "";
         private bool isOperationPerformed = false;
-        private string operation_perfomed;
 
         public PinkCalculator()
         {
@@ -30,59 +20,106 @@ namespace MyCalculator
 
         }
 
-     
-
         private void button_click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" || isOperationPerformed==true)
-                textBox1.Clear();//Daca la inceput am 0, il sterg
-            
+
+            if (textBox1.Text == "0" || isOperationPerformed == true)
+                textBox1.Clear();
+
             System.Windows.Forms.Button button = (System.Windows.Forms.Button)sender;
-            textBox1.Text = textBox1.Text + button.Text;
+
+
+            if (button.Text == ".")
+            {
+                if (!textBox1.Text.Contains("."))
+                    textBox1.Text = textBox1.Text + button.Text;
+            }
+            else
+            {
+
+                textBox1.Text = textBox1.Text + button.Text;
+            }
+
             isOperationPerformed = false;
-            
         }
 
         private void operator_click(object sender, EventArgs e)
         {
             System.Windows.Forms.Button button = (System.Windows.Forms.Button)sender;
-            operation_performed = button.Text;
-            result = Double.Parse(textBox1.Text);//convertesc textul butonului in numar si il adun la rezultat
-            labelCurrentOperation.Text = labelCurrentOperation.Text + " " + result + " " + operation_performed;
+            string new_operation = button.Text;
+            if (operation_performed != "")
+            {
+                perform_calculation(Double.Parse(textBox1.Text));
+                textBox1.Text = result.ToString();
+            }
+            else
+            {
+
+                result = Double.Parse(textBox1.Text);
+            }
+            operation_performed = new_operation;
+            labelCurrentOperation.Text = result.ToString() + " " + operation_performed;
             isOperationPerformed = true;
-
         }
 
-        private void clear_click(object sender, EventArgs e)
-        {
-            textBox1.Text = "0";
-        }
 
-        private void clear_click_simple(object sender, EventArgs e)
+        private void perform_calculation(double currentValue)
         {
-            textBox1.Text = "0";
-            result = 0;
-            labelCurrentOperation.Text = "";
+
+            switch (operation_performed)
+            {
+                case "+":
+                    result = result + currentValue;
+                    break;
+                case "-":
+                    result = result - currentValue;
+                    break;
+                case "*":
+                    result = result * currentValue;
+                    break;
+                case "/":
+
+                    if (currentValue != 0)
+                    {
+                        result = result / currentValue;
+                    }
+                    else
+                    {
+                        textBox1.Text = "ERR: Div/0";
+                        result = 0;
+                        operation_performed = "";
+                    }
+                    break;
+            }
         }
 
         private void equal_click(object sender, EventArgs e)
         {
-            labelCurrentOperation.Text = labelCurrentOperation.Text + "" + textBox1.Text + " = ";
-            switch (operation_performed) {
-                case "+":
-                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
-                    break;
-                case "-":
-                    textBox1.Text = (result - Double.Parse(textBox1.Text)).ToString();
-                    break;
-                case "*":
-                    textBox1.Text = (result * Double.Parse(textBox1.Text)).ToString();
-                    break;
-                case "/":
-                    textBox1.Text = (result / Double.Parse(textBox1.Text)).ToString();
-                    break;
-                
+
+            if (operation_performed != "")
+            {
+                double second_operand = Double.Parse(textBox1.Text);
+                perform_calculation(second_operand);
+                labelCurrentOperation.Text = labelCurrentOperation.Text + " " + second_operand.ToString() + " = ";
+                textBox1.Text = result.ToString();
+                operation_performed = "";
+                isOperationPerformed = true;
             }
+        }
+
+        private void clear_click(object sender, EventArgs e) // CE (Clear Entry)
+        {
+
+            textBox1.Text = "0";
+        }
+
+        private void clear_click_simple(object sender, EventArgs e) // C (Clear All)
+        {
+            textBox1.Text = "0";
+            result = 0;
+            labelCurrentOperation.Text = "";
+            operation_performed = "";
+            isOperationPerformed = false;
         }
     }
 }
