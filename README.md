@@ -12,4 +12,5 @@ User Interface: A simple, visually distinct "Pink Calculator" theme (as suggeste
 
 
 
-<img width="412" height="550" alt="image" src="https://github.com/user-attachments/assets/edb361e0-6f0b-45bf-bda8-ebfe3a75088a" />
+<img width="603" height="685" alt="image" src="https://github.com/user-attachments/assets/5c4cb0d1-00f6-4007-ba62-a8ca4f6cf513" />
+
