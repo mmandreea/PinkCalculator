@@ -10,4 +10,6 @@ Real-time Feedback: Uses a display label (labelCurrentOperation) to show the ong
 Error Handling: Basic handling for Division by Zero.
 User Interface: A simple, visually distinct "Pink Calculator" theme (as suggested by the class name PinkCalculator).
 
+
+
 <img width="412" height="550" alt="image" src="https://github.com/user-attachments/assets/edb361e0-6f0b-45bf-bda8-ebfe3a75088a" />
